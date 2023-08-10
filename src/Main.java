@@ -7,13 +7,19 @@ public class Main {
 		//스캐너 입력 받기위함
 		Scanner sc = new Scanner(System.in);
 		
-		//입력받음 입력값을 cmd 변수에 담음
-		String cmd = sc.nextLine();
+		while(true) {
+			System.out.printf("명령어)");
+			//입력받음 입력값을 cmd 변수에 담음
+			String cmd = sc.nextLine();
+			
+			if(cmd.equals("exit")) {
+				break;
+			}
+		}
+		
 		
 		//숫자타입
 		//int cmd = sc.nextInt();
-		
-		System.out.println("입력된 명령어 : " + cmd);
 		
 		System.out.println("==프로그램 종료==");
 		
